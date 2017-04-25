@@ -1,4 +1,6 @@
 #pragma once
+#pragma clang diagnostic push
+#pragma clang system_header
 #include "crow/query_string.h"
 #include "crow/http_parser_merged.h"
 #include "crow/ci_map.h"
@@ -21,3 +23,4 @@
 #include "crow/http_connection.h"
 #include "crow/http_server.h"
 #include "crow/app.h"
+#pragma clang diagnostic pop
