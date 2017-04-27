@@ -1,11 +1,11 @@
 #pragma once
 
-#if defined(__APPLE__)
+#ifdef __APPLE__
 #pragma clang diagnostic push
 #pragma clang system_header
 #endif
 
-#if defined(_WIN32) || defined(_WIN64)
+#ifdef _MSC_VER
 #pragma warning(push)
 #pragma warning(disable:4244)	// __int64 to uint16_t
 #pragma warning(disable:4267)	// size_t to int
@@ -37,10 +37,10 @@
 #include "crow/http_server.h"
 #include "crow/app.h"
 
-#if defined(__APPLE__)
+#ifdef __APPLE__
 #pragma clang diagnostic pop
 #endif
 
-#if defined(_WIN32) || defined(_WIN64)
+#ifdef _MSC_VER
 #pragma warning(pop)
 #endif
