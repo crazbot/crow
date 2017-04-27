@@ -5,7 +5,7 @@
 #pragma clang system_header
 #endif
 
-#ifdef _MSC_VER
+#if defined(_WIN32) || defined(_WIN64)
 #pragma warning(push)
 #pragma warning(disable:4244)	// __int64 to uint16_t
 #pragma warning(disable:4267)	// size_t to int
@@ -41,6 +41,6 @@
 #pragma clang diagnostic pop
 #endif
 
-#ifdef _MSC_VER
+#if defined(_WIN32) || defined(_WIN64)
 #pragma warning(pop)
 #endif
