@@ -23,6 +23,8 @@ namespace crow
 
     struct request
     {
+        
+
         HTTPMethod method;
         std::string raw_url;
         std::string url;
@@ -32,6 +34,7 @@ namespace crow
 
         void* middleware_context{};
         boost::asio::io_service* io_service{};
+        boost::asio::ip::tcp::endpoint remote_endpoint;
 
         request()
             : method(HTTPMethod::Get)
