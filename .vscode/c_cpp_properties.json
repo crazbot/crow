@@ -50,7 +50,7 @@
             ],
             "browse": {
                 "path": [
-                    "D:\\boost_1_64_0",
+                    "D:/local/boost_1_64_0",
                     "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/um",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/ucrt",
