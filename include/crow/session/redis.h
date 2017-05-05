@@ -9,12 +9,13 @@
 #define __crow_session_redis_h
 
 #include "crow.h"
+#include "hiredis.h"
 
 namespace crow
 {
     namespace session
     {
-        class RedisSession {
+        struct RedisSession {
 
             RedisSession() {
 
