@@ -45,6 +45,7 @@
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.14393.0/winrt"
             ],
             "defines": [
+                "_WIN32",
                 "_DEBUG",
                 "UNICODE"
             ],
