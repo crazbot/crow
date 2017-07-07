@@ -51,4 +51,8 @@ add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/amalgamate/crow_all.h
     )
 
 add_custom_target(amalgamation ALL DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/amalgamate/crow_all.h)
+
+install(FILES "${PROJECT_SOURCE_DIR}/include/crow.h" DESTINATION include COMPONENT Devel)
+install(DIRECTORY "${PROJECT_SOURCE_DIR}/include/crow" DESTINATION include COMPONENT Devel)
+
 endif()

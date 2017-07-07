@@ -1,3 +1,6 @@
+# amalgamate
+amalgamate/crow_all.h
+
 # vscode
 .vscode/.cmaketools.json
 .vscode/c_cpp_properties.json
